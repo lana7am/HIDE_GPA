@@ -5,6 +5,5 @@ window.addEventListener('load', () => {
            GPAelement.style.setProperty('display', 'none');
            requestAnimationFrame(hide);
    };
-   
    hide();
 });
