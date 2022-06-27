@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "HideGPA",
+  "description": "Hide gpa",
+  "version": "1.0",
+  "icons" :{
+    "16" : "icons/icon.png" ,
+    "32" : "icons/icon.png" ,
+    "48" : "icons/icon.png" ,
+    "128" : "icons/icon.png" 
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://edugate.ksu.edu.sa/ksu/ui/student/forwardHome.faces"],
+      "js": ["hide-GPA.js"],
+
+      "run_at": "document_start",
+      "all_frames": true
+    }
+]
+
+}
